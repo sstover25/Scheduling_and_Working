@@ -33,16 +33,16 @@ The following image demonstrates the application functionality:
 
 You are required to submit the following for review:
 
-- The URL of the deployed application: https://sstover25.github.io/The_Amazing_Password_Generator/
+- The URL of the deployed application: https://sstover25.github.io/Scheduling_and_Working/
 
-- The URL of the GitHub repository: https://github.com/sstover25/The_Amazing_Password_Generator
+- The URL of the GitHub repository: https://github.com/sstover25/Scheduling_and_Working
 
 ---
 
 ## Credits
 
 ```
-Coding assistance from KU bootcamp modules, https://www.w3schools.com, https://developer.mozilla.org/, and Stack Overflow.
+Coding assistance from KU bootcamp modules, https://developer.mozilla.org/, Bootstrap documentation, jQuery documentation, Moment.js documentation, and Stack Overflow.
 
 ```
 

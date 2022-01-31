@@ -138,8 +138,82 @@ function timeCheck() {
 }
 
 // save the data in each row to local Storage
-
+// 9 AM
+$("#saveBtn9").click(function() {
+    var taskText9AM = $(this).siblings("textarea").val();
+    localStorage.setItem("9AM task", JSON.stringify(taskText9AM));
+})
+// 10 AM
+$("#saveBtn10").click(function() {
+    var taskText10AM = $(this).siblings("textarea").val();
+    localStorage.setItem("10AM task", JSON.stringify(taskText10AM));
+})
+// 11 AM
+$("#saveBtn9").click(function() {
+    var taskText11AM = $(this).siblings("textarea").val();
+    localStorage.setItem("9AM task", JSON.stringify(taskText11AM));
+})
+// 12 PM
+$("#saveBtn12").click(function() {
+    var taskText12PM = $(this).siblings("textarea").val();
+    localStorage.setItem("12PM task", JSON.stringify(taskText12PM));
+})
+// 1 PM
+$("#saveBtn3").click(function() {
+    var taskText1PM = $(this).siblings("textarea").val();
+    localStorage.setItem("1PM task", JSON.stringify(taskText1PM));
+})
+// 2 PM
+$("#saveBtn14").click(function() {
+    var taskText2PM = $(this).siblings("textarea").val();
+    localStorage.setItem("2PM task", JSON.stringify(taskText2PM));
+})
+// 3 PM
+$("#saveBtn15").click(function() {
+    var taskText3PM = $(this).siblings("textarea").val();
+    localStorage.setItem("3PM task", JSON.stringify(taskText3PM));
+})
+// 4 PM
+$("#saveBtn16").click(function() {
+    var taskText4PM = $(this).siblings("textarea").val();
+    localStorage.setItem("4PM task", JSON.stringify(taskText4PM));
+})
+// 5 PM
+$("#saveBtn17").click(function() {
+    var taskText5PM = $(this).siblings("textarea").val();
+    localStorage.setItem("5PM task", JSON.stringify(taskText5PM));
+})
 
 // load saved data from local Storage
+var loadTasks = function() {
+    // 9 AM
+    taskText9AM = JSON.parse(localStorage.getItem("9AM task"));
+    $("#saveBtn9").siblings("textarea").val(taskText9AM);
+    // 10 AM
+    taskText10AM = JSON.parse(localStorage.getItem("10AM task"));
+    $("#saveBtn10").siblings("textarea").val(taskText10AM);
+    // 11 AM
+    taskText11AM = JSON.parse(localStorage.getItem("11AM task"));
+    $("#saveBtn11").siblings("textarea").val(taskText11AM);
+    // 12 PM
+    taskText12PM = JSON.parse(localStorage.getItem("12PM task"));
+    $("#saveBtn12").siblings("textarea").val(taskText12PM);
+    // 1 PM
+    taskText1PM = JSON.parse(localStorage.getItem("1PM task"));
+    $("#saveBtn13").siblings("textarea").val(taskText1PM);
+    // 2 PM
+    taskText2PM = JSON.parse(localStorage.getItem("2PM task"));
+    $("#saveBtn14").siblings("textarea").val(taskText2PM);
+    // 3 PM
+    taskText3PM = JSON.parse(localStorage.getItem("3PM task"));
+    $("#saveBtn15").siblings("textarea").val(taskText3PM);
+    // 4 PM
+    taskText4PM = JSON.parse(localStorage.getItem("4PM task"));
+    $("#saveBtn16").siblings("textarea").val(taskText4PM);
+    // 5 PM
+    taskText5PM = JSON.parse(localStorage.getItem("5PM task"));
+    $("#saveBtn17").siblings("textarea").val(taskText5PM);
+}
 
 timeCheck();
+loadTasks();
